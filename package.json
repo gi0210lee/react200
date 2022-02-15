@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "concurrently": "^6.2.1"
+  },
+  "scripts": {
+    "client": "cd client && yarn start",
+    "server": "cd server && yarn start:dev",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\" "
+  },
+  "devDependencies": {}
+}
